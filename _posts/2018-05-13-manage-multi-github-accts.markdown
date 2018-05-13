@@ -11,7 +11,7 @@ categories: git
 ssh-keygen -t rsa -C "<địa chỉ email của tài khoản>"
 {% endhighlight %}
 
-Chú ý khi cung cấp thông tin đường dẫn cho tập tin mới: tên mới phải khác tên đã được tạo cho các tài khoản trước đó nếu không tập tin cũ sẽ bị ghi đè. Tên file mới có thể đặt theo dạng ` ~/.ssh/id_rsa_<tên tài khoản> `, ví dụ `~/.ssh/id_rsa_nghecode `
+Chú ý khi cung cấp thông tin đường dẫn cho tập tin mới: tên mới phải khác tên đã được tạo cho các tài khoản trước đó nếu không tập tin cũ sẽ bị ghi đè. Tên file mới có thể đặt theo dạng `~/.ssh/id_rsa_<tên tài khoản>`, ví dụ `~/.ssh/id_rsa_nghecode`
 
 **Bước 2:** Thêm key vừa tạo vào tài khoản github:
 
@@ -31,7 +31,7 @@ Tiếp theo, thêm key vừa tạo vào ssh bằng lệnh `ssh-add`, ví dụ: `
 {% highlight shell %}
 vim ~/.ssh/config
 {% endhighlight %}
-Thêm đoạn cầu hình như sau:
+Thêm đoạn cấu hình như sau:
 {% highlight shell %}
 # Default account
 Host github.com
@@ -58,7 +58,7 @@ Mặc đinh:
 git remote add origin git@github.com:<tên tài khoản>/nghecode.github.io.git
 {% endhighlight %}
 
-Tài khoản thử 2:
+Tài khoản thứ 2:
 {% highlight shell %}
 git remote add origin git@nghecode.com:<tên tài khoản>/nghecode.github.io.git
 {% endhighlight %}
