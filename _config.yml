@@ -30,17 +30,17 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "rohanchandra/type-theme"
+  github: "Rvor"
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin: "https://www.linkedin.com/in/nhâm-tý-8ba6213a/" # Full URL
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: "Rvor"
   wordpress:
   youtube:
 
@@ -58,7 +58,7 @@ theme_settings:
   str_previous_post: "Previous post"
   str_next_page: "Next"
   str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
+  str_continue_reading: "Tìm hiểu thêm"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
   str_search_no_results: "No results found."
 
