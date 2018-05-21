@@ -13,9 +13,11 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+    <p>
+      Knowledge in the head and virtue in the heart, time devoted to study or business, instead of show and pleasure, are the way to be useful and consequently happy.
+      <br/>
+      <code>John Adams</code>
+    </p>
   header_text_feature_image:
   footer_text: >
     Được xây dựng bởi <a href="nhamtybv@gmail.com" >Nham Ty</a>
