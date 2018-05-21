@@ -2,6 +2,7 @@
 layout: page
 title: Tôi là ai?   
 permalink: /about/
+feature-img: assets/img/DSCF3443.JPG"
 ---
 
 Tôi tên là Tý.
