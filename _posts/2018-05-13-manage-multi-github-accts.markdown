@@ -2,8 +2,9 @@
 layout: post
 title: "Quản lý nhiều tài khoản github trên máy tính"
 date: 2018-05-13 20:47:10 --0600
-categories: git
+tags: [git, github, source control]
 ---
+
 Đây là giải pháp cho việc sử dụng nhiều tài khoản github trên cùng một máy tính.
 
 **Bước 1:** Tạo key ssh cho tài khoản thứ 2, dùng lệnh ssh-keygen
@@ -33,19 +34,23 @@ vim ~/.ssh/config
 {% endhighlight %}
 Thêm đoạn cấu hình như sau:
 {% highlight shell %}
+
 # Default account
+
 Host github.com
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_rsa
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa
 {% endhighlight %}
 Đây là cấu hình mặc định cho tài khoản hiện hành. Tiếp theo chúng ta thêm một đoạn cấu hình tương tự cho tài khoản mới. Chúng ta có thể tự đặt lại thông tin của trường `Host`
 {% highlight shell %}
+
 # Account nghecode
+
 Host nghecode.vn
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_rsa_nghecode
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_nghecode
 {% endhighlight %}
 Sau khi nhập xong thì lưu thông tin lại và thoát khỏi Vim bằng lệnh `:wq`
 
