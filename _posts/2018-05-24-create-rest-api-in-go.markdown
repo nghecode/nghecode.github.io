@@ -63,3 +63,12 @@ func main() {
 
 }
 ```
+> Bạn nên dùng Visual Code và cài đặt thêm các gói mở rộng để viết mã các chương trình bằng Golang. Bạn sẽ không phải khai báo các thư viện bằng lệnh `import`, VSCode sẽ tự đông làm giúp bạn khi có khai báo mới.
+
+Sau khi lưu lại các thay đổi bạn có thể build và chạy thử chương trình bằng câu lệnh sau:
+```shell
+go build
+
+./contact-api
+```
+Sau khi chạy xong bạn mở trình duyệt web và truy cập vào địa chỉ `http://localhost:3001` để kiểm tra chương trình.
