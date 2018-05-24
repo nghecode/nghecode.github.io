@@ -44,21 +44,22 @@ touch main.go
 
 Đầu tiên chúng ta tạo một hàm main, khi chạy ứng dụng hàm này sẽ được thực thi đầu tiên. Chung ta tạo một hàm khi chạy sẽ hiển thị lên trang chủ cụm từ `Hello, <tên bạn>`
 
-{% highlight go %}
+```go
 package main
 
 import (
-"fmt"
-"html"
-"log"
-"net/http"
+  "fmt"
+  "html"
+  "log"
+  "net/http"
 )
 
 func main() {
-http.HandleFunc("/", func(w http.ResponseWriter, r \*http.Request) {
-fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))})
+  http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+      })
 
-    log.Fatal(http.ListenAndServe(":3001", nil))
+  log.Fatal(http.ListenAndServe(":3001", nil))
 
 }
-{% endhighlight %}
+```
