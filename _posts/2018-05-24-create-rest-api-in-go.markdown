@@ -41,3 +41,24 @@ Từ thư mục làm việc, tạo tập tin `main.go`
 {% highlight shell %}
 touch main.go
 {% endhighlight %}
+
+Đầu tiên chúng ta tạo một hàm main, khi chạy ứng dụng hàm này sẽ được thực thi đầu tiên. Chung ta tạo một hàm khi chạy sẽ hiển thị lên trang chủ cụm từ `Hello, <tên bạn>`
+
+{% highlight go %}
+package main
+
+import (
+"fmt"
+"html"
+"log"
+"net/http"
+)
+
+func main() {
+http.HandleFunc("/", func(w http.ResponseWriter, r \*http.Request) {
+fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))})
+
+    log.Fatal(http.ListenAndServe(":3001", nil))
+
+}
+{% endhighlight %}
