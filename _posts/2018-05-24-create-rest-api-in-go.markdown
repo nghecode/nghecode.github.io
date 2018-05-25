@@ -72,3 +72,5 @@ go build
 ./contact-api
 ```
 Sau khi chạy xong bạn mở trình duyệt web và truy cập vào địa chỉ `http://localhost:3001` để kiểm tra chương trình.
+
+Đến đây cơ bản bạn đã làm cho ứng dụng hoạt động được nhưng làm cách nào để ứng dụng có thể hiển thị tên bạn trong câu `Heello <tên bạn>` hay làm cách nào chúng ta có thể thay đổi các thông số để có thể truy vấn dữ liệu từ API ... mới các bạn tiếp tục theo dỏi phần tiếp theo.
